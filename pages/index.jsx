@@ -49,13 +49,13 @@ export default function Home() {
                      e não conduz a nenhuma conclusão.</p>
                     <ul>
                       <li>
-                        <p><span className="le">&bull;</span> São os menores níveis de abstração de uma informação.</p>
+                        <p><span className="lb">&bull;</span> São os menores níveis de abstração de uma informação.</p>
                       </li>
                       <li>
-                        <p><span className="le">&bull;</span> São como matéria-prima que deve ser processada para informações.</p>
+                        <p><span className="lb">&bull;</span> São como matéria-prima que deve ser processada para informações.</p>
                       </li>
                       <li>
-                        <p><span className="le">&bull;</span> Não dependem da informação, mas a informação depende dos dados.</p>
+                        <p><span className="lb">&bull;</span> Não dependem da informação, mas a informação depende dos dados.</p>
                       </li>
                     </ul>
                 
@@ -64,13 +64,13 @@ export default function Home() {
                     sobre um contexto ou determinado assunto.</p>
                     <ul>
                       <li>
-                        <p><span className="lb">&bull;</span>É o resultado do precessamento dos dados.</p>
+                        <p><span className="le">&bull;</span>É o resultado do precessamento dos dados.</p>
                       </li>
                       <li>
-                        <p><span className="lb">&bull;</span>Depende dos dados, os dados completam as informações.</p>
+                        <p><span className="le">&bull;</span>Depende dos dados, os dados completam as informações.</p>
                       </li>
                       <li>
-                        <p><span className="lb">&bull;</span>Possui um conteúdo compreensível, sendo capaz de expressar uma situação por completo.</p>
+                        <p><span className="le">&bull;</span>Possui um conteúdo compreensível, sendo capaz de expressar uma situação por completo.</p>
                       </li>
                     </ul>
                     <table>
