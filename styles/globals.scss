@@ -1,5 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&display=swap");
 
+:root {
+  --blue: #0000ffcc;
+  --orange: #fe6703cc;
+}
 * {
   padding: 0;
   margin: 0;
@@ -13,6 +17,7 @@ body {
   font-family: "Major Mono Display", monospace;
   font-size: 50px;
   margin-bottom: 5px;
+  margin-right: 40px;
 }
 nav {
   display: flex;
@@ -72,6 +77,21 @@ a {
 }
 ul li {
   margin-left: 30px;
+  list-style-type: none;
+}
+.le {
+  color: #fe6603;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 1em;
+  margin-right: 10px;
+}
+.lb {
+  color: #0000ff;
+  font-weight: bold;
+  display: inline-block;
+  font-size: 1em;
+  margin-right: 10px;
 }
 
 .side-bar {
@@ -95,9 +115,13 @@ ul li {
     text-align: center;
     color: rgba(0, 0, 0, 0.8);
   }
-  h2 {
+  .dados {
     margin-top: 30px;
-    color: rgba(0, 0, 0, 0.75);
+    color: var(--blue);
+  }
+  .info {
+    margin-top: 30px;
+    color: var(--orange);
   }
 }
 table {
@@ -110,6 +134,13 @@ table {
     border: 1px solid #00000066;
     height: 70px;
     padding: 0 10px;
+    color: #7f7f7f;
+  }
+  .l {
+    color: var(--orange);
+  }
+  .b {
+    color: var(--blue);
   }
 }
 
