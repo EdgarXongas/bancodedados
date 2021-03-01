@@ -14,7 +14,6 @@ export default function Home() {
 				<title>Banco De Dados</title>
 				<link rel="icon" href="/imagens/xlogo.png"/>
 			</Head>
-			<Navbar/>
 			<Clock/>
 			<div className="main">
 				<SideBar/>
@@ -83,6 +82,7 @@ export default function Home() {
 								</div>
 						</div>
 				</div>
+			<Navbar/>
 		</div>
 	)
 }

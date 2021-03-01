@@ -12,7 +12,7 @@ export default function Historia() {
 				<title>História - Banco De Dados</title>
 				<link rel="icon" href="/imagens/xlogo.png"/>
 			</Head>
-			<Navbar/>
+			
 			<Clock/>
 			<div className="main">
 				<SideBar/>
@@ -22,6 +22,7 @@ export default function Historia() {
 					<p>As empresas e escritórios de todos os tipos, armazenavam seus dados em ficheiros, que eram organizados em grandes </p>
                 </div>
 			</div>
+			<Navbar/>
 		</div>
 	)
 }

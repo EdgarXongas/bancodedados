@@ -12,7 +12,7 @@ export default function Conversor() {
 				<title>Conversor</title>
 				<link rel="icon" href="/imagens/xlogo.png"/>
 			</Head>
-            <Navbar/>
+           
             <div className="main">
                 <SideBar/>
                 <div className="main-content conversor-container">
@@ -25,6 +25,7 @@ export default function Conversor() {
                     </div>
                 </div>
             </div>
+             <Navbar/>
         </div>
     )
 }   

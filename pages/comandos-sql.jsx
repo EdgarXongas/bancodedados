@@ -13,7 +13,7 @@ export default function ComandosSql() {
 				<title>SQL - Comandos</title>
 				<link rel="icon" href="/imagens/xlogo.png"/>
 			</Head>
-			<Navbar/>
+			
 			<Clock/>
 			<div className="main">
 				<SideBar/>
@@ -21,6 +21,7 @@ export default function ComandosSql() {
                    <h2>Comandos SQL</h2>
                 </div>
 			</div>
+			<Navbar/>
 		</div>
 	)
 }

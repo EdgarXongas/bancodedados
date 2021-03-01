@@ -32,7 +32,7 @@ const Conversor = (props) =>{
             <div className="ipt-container">
                 <div>
                     <label>{moedaA}</label>
-                    <input type="text" onKeyUp={handleChange} placeholder="..."/>
+                    <input type="text" onKeyUp={handleChange}/>
                 </div>
                 <span>=</span>
                 <div>
