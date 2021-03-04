@@ -20,11 +20,11 @@ const Clock = ()=> {
         
         return ()=>clearInterval(interval);
      },1000);
-   });
+   },[hora]);
     
     return(
         <div>
-            <h2 className="clock">{hora}</h2>
+            <p className="clock">{hora}</p>
         </div>
     );
 }

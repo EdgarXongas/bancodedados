@@ -5,7 +5,6 @@ import Navbar from './components/navbar';
 import Clock from './components/myClock';
 import SideBar from './components/sidebar';
 
-
 export default function Home() {
 	
 	return (

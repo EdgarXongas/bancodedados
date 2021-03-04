@@ -16,12 +16,12 @@ export default function Conversor() {
             <div className="main">
                 <SideBar/>
                 <div className="main-content conversor-container">
-                    <h1>Converter Moeda</h1>
+                    <h1>conversor de moeda</h1>
                     <div className="conversores">
-                    <Conversor_Component moedaA="BRL" moedaB="USD"/>
-                    <Conversor_Component moedaA="USD" moedaB="BRL"/>
-                    <Conversor_Component moedaA="BRL" moedaB="EUR"/>
-                    <Conversor_Component moedaA="EUR" moedaB="BRL"/>
+                        <Conversor_Component moedaA="USD" moedaB="BRL"/>
+                        <Conversor_Component moedaA="EUR" moedaB="BRL"/>
+                        <Conversor_Component moedaA="CAD" moedaB="BRL"/>
+                        <Conversor_Component moedaA="JPY" moedaB="BRL"/>
                     </div>
                 </div>
             </div>
