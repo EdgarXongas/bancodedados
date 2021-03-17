@@ -16,9 +16,9 @@ Sobre mim:
   - Tenho interesse em desenvolvimento de aplicações Full Stack.
 
 Estou aprendendo:
-    - Javascript
-    - Biblioteca React.js
-    - Flamework Next.js
-    - Uso de APIs (Express.js e Next.js)
-    - Banco de dados MySQL (mariaDB)
-    - Desenvolvimento de aplicações para dispositivos móveis (Java e React-Native)
+   - Javascript
+   - Biblioteca React.js
+   - Flamework Next.js
+   - Uso de APIs (Express.js e Next.js)
+   - Banco de dados MySQL (mariaDB)
+   - Desenvolvimento de aplicações para dispositivos móveis (Java e React-Native)
