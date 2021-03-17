@@ -13,8 +13,9 @@ Sobre mim:
   Meu nome é Edgar.
   Atualmente cursando Curso Superior de Análise e Desenvolvimento de Sistemas.
   Tenho interesse em desenvolvimento de aplicações Full Stack.
+  
   Estou aprendendo:
-    - Javascript.
+    - Javascript
     - Biblioteca React.js
     - Flamework Next.js
     - Uso de APIs (Express.js e Next.js)
