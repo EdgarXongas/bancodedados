@@ -18,8 +18,8 @@ const Navbar = ()=> {
 				<Link href="/">
 					<a>Home</a>
 				</Link>
-				<Link href="/">
-					<a>Serviços</a>
+				<Link href="/conversor">
+					<a>Conversor de Moeda</a>
 				</Link>
 				<Link href="/">
 					<a>Sobre</a>
@@ -31,9 +31,8 @@ const Navbar = ()=> {
                 
                 <Link href="/comandos-sql"><a className="mobile-sidebar">Comandos SQL</a></Link>
                 
-                <Link href="/conversor"><a className="mobile-sidebar">Conversor Moeda</a></Link>
 			</div>
-			<input className="nav-btn" type="button" value="About"/>
+			<input className="nav-btn" type="button" value="Contato"/>
 			<div onClick={burgerClick} className="burger">
 				<div></div>
 				<div></div>

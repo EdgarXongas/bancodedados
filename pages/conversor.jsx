@@ -12,17 +12,10 @@ export default function Conversor() {
 				<title>Conversor</title>
 				<link rel="icon" href="/imagens/xlogo.png"/>
 			</Head>
-           
             <div className="main">
                 <SideBar/>
-                <div className="main-content conversor-container">
-                    <h1>conversor de moeda</h1>
-                    <div className="conversores">
-                        <Conversor_Component moedaA="USD" moedaB="BRL"/>
-                        <Conversor_Component moedaA="EUR" moedaB="BRL"/>
-                        <Conversor_Component moedaA="CAD" moedaB="BRL"/>
-                        <Conversor_Component moedaA="JPY" moedaB="BRL"/>
-                    </div>
+                <div className="main-content">
+                    <Conversor_Component moedaA="USD" moedaB="BRL"/>
                 </div>
             </div>
              <Navbar/>
