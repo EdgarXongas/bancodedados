@@ -21,10 +21,6 @@ const Navbar = ()=> {
 				<Link href="/conversor">
 					<a>Conversor de Moeda</a>
 				</Link>
-				<Link href="/">
-					<a>Sobre</a>
-				</Link>
-				
              	<Link href="/"><a className="mobile-sidebar">Dados x Informação</a></Link>
                 
                 <Link href="/historia"><a className="mobile-sidebar">História Banco de Dados</a></Link>
@@ -32,7 +28,9 @@ const Navbar = ()=> {
                 <Link href="/comandos-sql"><a className="mobile-sidebar">Comandos SQL</a></Link>
                 
 			</div>
-			<input className="nav-btn" type="button" value="Contato"/>
+			<Link href="/sobre">
+				<input className="nav-btn" type="button" value="Sobre"/>
+			</Link>
 			<div onClick={burgerClick} className="burger">
 				<div></div>
 				<div></div>

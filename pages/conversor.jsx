@@ -3,6 +3,7 @@ import Head from 'next/head';
 import Conversor_Component from './components/conversor';
 import Navbar from './components/navbar';
 import SideBar from './components/sidebar';
+import Clock from './components/myClock';
 
 
 export default function Conversor() {
@@ -12,6 +13,7 @@ export default function Conversor() {
 				<title>Conversor</title>
 				<link rel="icon" href="/imagens/xlogo.png"/>
 			</Head>
+            <Clock/>
             <div className="main">
                 <SideBar/>
                 <div className="main-content">

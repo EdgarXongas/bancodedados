@@ -100,7 +100,54 @@ a {
     }
   }
 } 
-            
+            /* Sobre */
+.sobre {
+  margin-top: 25px;
+  .meunome {
+    margin-bottom: 30px;
+    span{
+      font-family: "Major Mono Display", monospace;
+      color: var(--blue);
+      font-size: 40px;
+      margin-bottom: 30px;
+    }
+  }
+  .sobre-containers{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    div {
+      border: 1px solid var(--blue);
+      box-shadow: 0 5px 10px #0000001a;
+      border-radius: 5px;
+      width: 30vw;
+      height: 37vh;
+      padding: 15px;
+      margin: 10px;
+      a{
+        color: var(--blue);
+        text-decoration: underline;
+      }
+      h3{
+        color: var(--blue);
+        margin-bottom: 10px;
+      }
+      ul li {
+       margin: 5px 0;
+       list-style-type: none;
+       span {
+        color: #0000ff;
+        font-weight: bold;
+        display: inline-block;
+        font-size: 1em;
+        margin-right: 10px;
+       }
+      }
+    }
+  }
+
+}
+
             /* Dados x Informação */
 
 .dadosxinformação {
