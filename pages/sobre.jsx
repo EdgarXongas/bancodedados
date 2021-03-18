@@ -30,11 +30,11 @@ export default function Sobre(){
                          <div>
                             <h3>Estou Aprendendo</h3>
                             <ul>
-                                <li><span>&bull;</span>Javascript,CSS/SASS,HTML</li>
-                                <li><span>&bull;</span>Criação de APIs (Express.js e Next.js)</li>
-                                <li><span>&bull;</span>Biblioteca React.js</li>
-                                <li><span>&bull;</span>Flamework Next.js</li>
-                                <li><span>&bull;</span>Banco de dados MySQL (mariaDB)</li>
+                                <li><span>&bull;</span>Javascript, Java e Python</li>
+                                <li><span>&bull;</span>React.js e React Native</li>
+                                <li><span>&bull;</span>Next.js</li>
+                                <li><span>&bull;</span>APIs (Next.js e Express.js)</li>
+                                <li><span>&bull;</span>MySQL (mariaDB)</li>
                                 <li><span>&bull;</span>Desenvolvimento de aplicações para dispositivos móveis (Java e React-Native)</li>
                             </ul>
                         </div>
@@ -49,8 +49,8 @@ export default function Sobre(){
                         </div> 
                         <div>
                             <h3>Projetos</h3>
-                            <p>Visite meu  perfil no <a href="https://github.com/EdgarXongas">GitHub</a></p>
-                            <p>e confira meus projetos.</p>
+                            <p>Visite meu  perfil no <a href="https://github.com/EdgarXongas">GitHub</a>, confira meus projetos e acompanhe meu progresso.</p>
+                            
                         </div>
                     </div>
                 </div>

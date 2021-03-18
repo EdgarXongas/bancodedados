@@ -105,6 +105,7 @@ a {
   margin-top: 25px;
   .meunome {
     margin-bottom: 30px;
+    user-select: none;
     span{
       font-family: "Major Mono Display", monospace;
       color: var(--blue);
@@ -113,6 +114,7 @@ a {
     }
   }
   .sobre-containers{
+    user-select: none;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -121,9 +123,10 @@ a {
       box-shadow: 0 5px 10px #0000001a;
       border-radius: 5px;
       width: 30vw;
-      height: 37vh;
-      padding: 15px;
+      min-height: 33vh;
+      padding: 18px;
       margin: 10px;
+     
       a{
         color: var(--blue);
         text-decoration: underline; 
@@ -410,4 +413,7 @@ a {
   .nav-btn, .side-bar { display: none;}
   .burger { display: block; }
   .main, .main-content { width: 100vw; }
+  .conversor{
+    width: 80%;
+  }
 }
