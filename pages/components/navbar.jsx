@@ -28,7 +28,7 @@ const Navbar = ()=> {
                 <Link href="/comandos-sql"><a className="mobile-sidebar">Comandos SQL</a></Link>
                 
 			</div>
-			<Link href="/sobre">
+			<Link href="/">
 				<input className="nav-btn" type="button" value="Sobre"/>
 			</Link>
 			<div onClick={burgerClick} className="burger">

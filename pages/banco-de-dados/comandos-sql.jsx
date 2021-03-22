@@ -1,9 +1,9 @@
 import Head from 'next/head';
-import Navbar from './components/navbar';
-import Clock from './components/myClock';
-import SideBar from './components/sidebar';
+import Navbar from '../components/navbar';
+import Clock from '../components/myClock';
+import SideBar from '../banco-de-dados/components/sidebar-banco';
 
-export default function ComandosSql() {
+export default function Comandos_Sql() {
 	
 	return (
 		<div>
@@ -21,11 +21,11 @@ export default function ComandosSql() {
 						<p>SQL ( Structured Query Language ), é uma linguagem de programação para armazenamento, manipulação e recuperação de dados, em um banco de dados relacionado.</p>
 						
 						<SqlContainer content={{
-							text: "Comando para selecionar todos os dados de uma table.",
+							text: "Query para selecionar todos os dados de uma table.",
 							command: <p><span>select</span> * <span>from</span> table_name;</p>
 						}}/>
 						<SqlContainer content={{
-							text: "Comando para selecionar duas colunas de uma table.",
+							text: "Query para selecionar duas colunas de uma table.",
 							command: <p><span>select</span> coluna1, coluna2 <span>from</span> tabela_name;</p>
 						}}/>
 						<SqlContainer content={{
@@ -58,7 +58,7 @@ export default function ComandosSql() {
 							text: "Seleciona todos os dados e ordena em decrescente.",
 							command: <p><span>select</span> * <span>from</span> table_name <span>order by</span> coluna <span>desc</span>;</p>
 						}}/>
-						<h2>Uso do INSERT INTO</h2>
+						<h2>Inserindo dados</h2>
 						<SqlContainer content={{
 							text: "Adiciona dados em uma ou mais colunas",
 							command: <p><span>insert into</span> table_name <span>(</span>coluna1, coluna2<span>) <br/> values (</span>value1, value2<span>)</span>;</p>
