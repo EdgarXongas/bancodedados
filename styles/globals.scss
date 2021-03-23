@@ -283,12 +283,12 @@ nav {
       display: block;
       margin-bottom: 5px;
     }
-  span {
+    span {
     margin: 0 4px;
     cursor: pointer;
     transform: translateY(45%);
+    }
   }
-}
   input[type="text"] {
     font-size: 25px;
     width: 100px;
@@ -449,7 +449,7 @@ nav {
   .main-content { 
      width: 80vw; 
   }
-  .conversor{ width: 80%; }
+  .conversor{ width: 100%; }
   .sobre-containers {
     flex-direction: column;
     div {
