@@ -20,6 +20,15 @@ const Navbar = ()=> {
                 <Link href="/banco-de-dados">
 					<a className="mobile-sidebar">Banco de Dados</a>
 				</Link>
+                    
+				<Link href="/banco-de-dados/historia"><a className="mobile-sidebar">História</a></Link>
+					
+					
+				<Link href="/banco-de-dados/my-sql"><a className="mobile-sidebar">MySQL</a></Link>
+					
+				
+				<Link href="/banco-de-dados/no-sql"><a className="mobile-sidebar">NoSQL</a></Link>
+			
 				<Link href="/conversor">
 					<a>Conversor de Moeda</a>
 				</Link>

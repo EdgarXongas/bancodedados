@@ -1,14 +1,14 @@
 import Head from 'next/head';
-import Navbar from '../components/navbar';
+import Navbar from "../banco-de-dados/components/navbar-banco";
 import Clock from '../components/myClock';
-import SideBar from '../banco-de-dados/components/sidebar-banco';
+import SideBar from './components/sidebar-banco';
 
 export default function Comandos_Sql() {
 	
 	return (
 		<div>
 			<Head>
-				<title>SQL - Comandos</title>
+				<title>MySQL - Comandos</title>
 				<link rel="icon" href="/imagens/xlogo.png"/>
 			</Head>
 			
@@ -17,7 +17,7 @@ export default function Comandos_Sql() {
 				<SideBar/>
                 <div className="main-content comandos-sql">
 				   <div className="comandos-container">
-					    <h1>Comandos SQL</h1>
+					    <h1>MySQL</h1>
 						<p>SQL ( Structured Query Language ), é uma linguagem de programação para armazenamento, manipulação e recuperação de dados, em um banco de dados relacionado.</p>
 						
 						<SqlContainer content={{

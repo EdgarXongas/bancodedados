@@ -1,11 +1,10 @@
 import React, {useState,useRef} from 'react';
-import swal from 'sweetalert';
 
 const Conversor = (props) =>{
 
    const btn = useRef('');
-   const [resultado,setResultado] = useState();
-   const [ipt,setIpt] = useState();
+   const [resultado,setResultado] = useState('');
+   const [ipt,setIpt] = useState(0);
    const [moedaA,setMoedaA] = useState(props.moedaA);
    const [moedaB,setMoedaB] = useState(props.moedaB);
 
@@ -16,26 +15,15 @@ const Conversor = (props) =>{
         let promise = await fetch(url);
         let obj = await promise.json();
         let result = obj.rates[moedaB] * ipt;
-        setResultado( Number(result)? result.toFixed(2) : '');
+        setResultado( Number(result)? (result.toFixed(2)).toString() : '');
        
-        /* if(isNaN(ipt)) {
-            swal({
-                title: 'Valor Inválido',
-                text: 'Por favor, digite um valor.',
-                icon: 'warning',
-                button: {
-                    text: 'Entendi',
-                    className: 'alert-btn'
-                }
-            });
-        } */
     }
     function handleChange(e) {
         setIpt(parseFloat(e.target.value))
         if(e.key=="Enter"){
             btn.current.click();
         }
-        console.log(e.target.value);
+        console.log(typeof ipt);
     }
     function swapCurrency() {
         let a = moedaA;
@@ -99,4 +87,4 @@ const Conversor = (props) =>{
         </div>
     )
 }
-export default Conversor;
+export default Conversor

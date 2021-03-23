@@ -7,24 +7,29 @@ const SideBar = ()=>{
         <div>
             <ul className="side-bar">
                 <li>
-                    <Link href="/"><a>Sobre</a></Link>
+                    <Link href="/"><a>Home</a></Link>
                 </li>
                 <li>
                     <Link href="/banco-de-dados"><a>Banco de Dados</a></Link>
                 </li>
-				<ul>
-                    <li>
-                        <Link href="/banco-de-dados"><a><span>&bull;</span> Dados x Informação</a></Link> 
-                    </li>
-                    <li>
-                        <Link href="/banco-de-dados/historia"><a><span>&bull;</span> História</a></Link>
-                    </li>
-                    <li>
-                        <Link href="/banco-de-dados/comandos-sql"><a><span>&bull;</span> Comandos SQL</a></Link>
-                    </li>
-                </ul>
                 <li>
-                    <Link href="/conversor"><a>Conversor</a></Link>
+                	<ul>
+                        <li>
+                            <Link href="/banco-de-dados"><a><span>&bull;</span> Dados x Informação</a></Link> 
+                        </li>
+                        <li>
+                            <Link href="/banco-de-dados/historia"><a><span>&bull;</span> História</a></Link>
+                        </li>
+                        <li>
+                            <Link href="/banco-de-dados/my-sql"><a><span>&bull;</span> MySQL</a></Link>
+                        </li>
+                        <li>
+                            <Link href="/banco-de-dados/no-sql"><a><span>&bull;</span> NoSQL</a></Link>
+                        </li>
+                   </ul>
+                </li>
+                <li>
+                    <Link href="/conversor"><a>Conversor de Moedas</a></Link>
                 </li>
 			</ul>
         </div>

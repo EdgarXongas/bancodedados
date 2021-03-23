@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import Image from 'next/image';
 import React, { useState } from 'react';
-import Navbar from '../components/navbar';
+import Navbar from '../banco-de-dados/components/navbar-banco';
 import SideBar from '../banco-de-dados/components/sidebar-banco';
 import Clock from '../components/myClock';
 
@@ -82,6 +82,7 @@ export default function Dados_vs_informaçao() {
 				</div>
 				</div>
 			<Navbar/>
+			<Clock/>
 		</div>
 	)
 }
