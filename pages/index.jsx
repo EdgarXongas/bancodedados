@@ -1,21 +1,18 @@
 
 import Head from 'next/head'
-import Link from 'next/link'
 import React from 'react'
 import Clock from './components/myClock'
 import Navbar from './components/navbar'
-import SideBar from './components/sidebar'
 
 export default function Home(){
     return(
         <div>
             <Head>
-                <title>Sobre Edgar</title>
+                <title>Home - Edgar Jonas</title>
                 <link rel="icon" href="/imagens/xlogo.png"/>
             </Head>
             <Clock/>
             <div className="main">
-                <SideBar/>
                 <div className="main-content sobre">
                     <p className="meunome">Quem é &nbsp;<span>Edgar Jonas?</span></p>
                     <div className="sobre-containers">
@@ -50,7 +47,6 @@ export default function Home(){
                         <div>
                             <h3>Projetos</h3>
                             <p>Visite meu  perfil no <a href="https://github.com/EdgarXongas" target="blank">GitHub</a>, confira meus projetos e acompanhe meu progresso.</p>
-                            
                         </div>
                     </div>
                 </div>

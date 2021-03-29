@@ -7,13 +7,14 @@ const SideBar = ()=>{
         <div>
             <ul className="side-bar">
                 <li>
-                    <Link href="/"><a>Home</a></Link>
+                   <p>Projetos</p>
                 </li>
 				<li>
-                    <Link href="/banco-de-dados"><a>Banco de Dados</a></Link>
-                </li>
-                <li>
-                    <Link href="/conversor"><a>Conversor Moedas</a></Link>
+                    <ul>
+                         <li>
+                            <Link href="/projetos"><a>Conversor Moedas</a></Link>
+                        </li>
+                    </ul>
                 </li>
 			</ul>
         </div>

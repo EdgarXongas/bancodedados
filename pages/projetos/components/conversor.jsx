@@ -59,7 +59,7 @@ const Conversor = (props) =>{
             <div className="ipt-container">
                 <div>
                     <select value={moedaA} onChange={getMoedaA}>
-                        <option value="BRL">BRL</option>
+                        <option title="Brasil" value="BRL">BRL</option>
                         <option value="USD">USD</option>
                         <option value="EUR">EUR</option>
                         <option value="CAD">CAD</option>

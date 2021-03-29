@@ -6,7 +6,7 @@ export default function NoSQL(){
     return(
         <div>
             <Head>
-                <title>No SQL - Xongas</title>
+                <title>No SQL - Banco de Dados</title>
                 <link rel="icon" href="/imagens/xlogo.png"/>
             </Head>
             <div className="main">

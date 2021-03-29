@@ -19,14 +19,14 @@ export default function Historia() {
 				<div className="main-content historia">
                     <h1>Banco de Dados</h1>
 					<h2>História e Origem</h2>
-					<p>A sociedade moderna sempre precisou de alguma maneira ou método para organizar informaçãos.</p>
+					<p>A sociedade moderna sempre precisou de alguma maneira ou método para organizar informações.</p>
 					<p>Bancos, hospitais, delegacias, prefeituras, bibliotecas, empresas, e universidades sempre tiveram que lidar com armazenamento de dados e informação.</p>
 					<ul>
 						<li>
 							<p>Bancos precisavam manter atualizado quanto cada cliente depositou ou retirou, sempre de forma organizada e correta.</p>
 						</li>
 						<li>
-							<p>Bibliotecas precisavam saber quem pegou qual livro e quando deve devolver.</p>
+							<p>Bibliotecas precisavam saber quem retirou qual livro e quando deve devolver.</p>
 						</li>
 						<li>
 							<p>Hospitais tinham que armazenar fichas e histórico médico dos pacientes.</p>

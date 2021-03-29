@@ -10,7 +10,7 @@ export default function Dados_vs_informaçao() {
 	return (
 		<div>
 			<Head>
-				<title>Dados x Informação</title>
+				<title>Dados x Informação - Banco de Dados</title>
 				<link rel="icon" href="/imagens/xlogo.png"/>
 			</Head>
 			<Clock/>

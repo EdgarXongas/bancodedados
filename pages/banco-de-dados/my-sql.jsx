@@ -8,7 +8,7 @@ export default function Comandos_Sql() {
 	return (
 		<div>
 			<Head>
-				<title>MySQL - Comandos</title>
+				<title>MySQL - Banco de Dados</title>
 				<link rel="icon" href="/imagens/xlogo.png"/>
 			</Head>
 			
@@ -18,7 +18,7 @@ export default function Comandos_Sql() {
                 <div className="main-content comandos-sql">
 				   <div className="comandos-container">
 					    <h1>MySQL</h1>
-						<p>SQL ( Structured Query Language ), é uma linguagem de programação para armazenamento, manipulação e recuperação de dados, em um banco de dados relacionado.</p>
+						<p>SQL ( Structured Query Language ), é uma linguagem de programação para armazenamento, manipulação e recuperação de dados, em um banco de dados relacional.</p>
 						
 						<SqlContainer content={{
 							text: "Query para selecionar todos os dados de uma table.",

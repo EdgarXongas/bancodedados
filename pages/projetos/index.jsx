@@ -1,16 +1,16 @@
 import React from 'react';
 import Head from 'next/head';
 import Conversor_Component from './components/conversor';
-import Navbar from './components/navbar';
+import Navbar from '../components/navbar';
 import SideBar from './components/sidebar';
-import Clock from './components/myClock';
+import Clock from '../components/myClock';
 
 
 export default function Conversor() {
     return(
         <div>
             <Head>
-				<title>Conversor</title>
+				<title>Conversor - Projetos</title>
 				<link rel="icon" href="/imagens/xlogo.png"/>
 			</Head>
             <Clock/>

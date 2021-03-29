@@ -12,13 +12,13 @@ const Navbar = ()=> {
 
     return(
         <nav>
-			<Link href="/"><a id="logo">X</a></Link>	
+			<Link href="https://edgarjonas.com"><a id="logo">X</a></Link>	
             <div className={name}>
 				<Link href="/">
 					<a>Home</a>
 				</Link>
                 <Link href="/banco-de-dados">
-					<a className="mobile-sidebar">Banco de Dados</a>
+					<a>Banco de Dados</a>
 				</Link>
                     
 				<Link href="/banco-de-dados/historia"><a className="mobile-sidebar">História</a></Link>
@@ -29,8 +29,8 @@ const Navbar = ()=> {
 				
 				<Link href="/banco-de-dados/no-sql"><a className="mobile-sidebar">NoSQL</a></Link>
 			
-				<Link href="/conversor">
-					<a>Conversor de Moeda</a>
+				<Link href="/projetos">
+					<a>Projetos</a>
 				</Link>
 			</div>
 			<Link href="/">
