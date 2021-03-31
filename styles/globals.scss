@@ -51,6 +51,9 @@ nav {
       list-style-type: none;
       
     }
+    .mobile {
+      display: none;
+    }
   }
   .nav-btn {
     font-size: 20px;
@@ -261,7 +264,7 @@ nav {
   justify-content: center;
   align-items: center;
   width: 60%;
-  height: 60%;
+  min-height: 60%;
   margin: auto;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -417,6 +420,7 @@ nav {
 .mobile-sidebar {
   display: none;
 }
+
 @media screen and (max-width: 850px) {
   body {
     overflow-x: hidden;
@@ -438,7 +442,7 @@ nav {
       align-items: center;
       flex-direction: column;
       transform: translateX(150%);
-      transition: all 1s;
+      transition: all 0.5s;
       a {
         text-align: center;
         display: block;
@@ -465,5 +469,10 @@ nav {
   }
   .meunome {
     text-align: center;
+  }
+}
+@media screen and (max-width: 400px) {
+  .sobre-containers {
+    div { width: 80vw !important;}
   }
 }
