@@ -12,7 +12,6 @@ export default function Historia() {
 				<title>História - Banco De Dados</title>
 				<link rel="icon" href="/imagens/xlogo.png"/>
 			</Head>
-			
 			<Clock/>
 			<div className="main">
 				<SideBar/>
