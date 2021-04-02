@@ -17,7 +17,7 @@ export default function Conversor() {
             <div className="main">
                 <SideBar/>
                 <div className="main-content">
-                    <Conversor_Component moedaA="USD" moedaB="BRL"/>
+                    {/* <Conversor_Component moedaA="USD" moedaB="BRL"/> */}
                 </div>
             </div>
              <Navbar/>
