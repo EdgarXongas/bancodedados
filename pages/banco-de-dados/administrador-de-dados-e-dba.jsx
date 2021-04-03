@@ -2,11 +2,11 @@ import NavBar from './components/navbar-banco'
 import SideBar from './components/sidebar-banco'
 import Head from 'next/head'
 
-export default function AdminDeDadosEDBA (){
+function AdminDeDadosEDBA (props){
     return(
         <div>
             <Head>
-				<title>Admin de Dados e DBA - Banco De Dados</title>
+				<title>{props.title}</title>
 				<link rel="icon" href="/imagens/xlogo.png"/>
 			</Head>
             <div className="main">
@@ -39,3 +39,12 @@ export default function AdminDeDadosEDBA (){
         </div>
     )
 }
+export async function getStaticProps(){
+    return{
+        props: {
+            title: 'Admin de Dados e DBA - Banco De Dados'
+        }
+    }
+}  
+
+export default AdminDeDadosEDBA

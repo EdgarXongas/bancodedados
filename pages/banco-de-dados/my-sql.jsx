@@ -3,12 +3,12 @@ import Navbar from "../banco-de-dados/components/navbar-banco";
 import Clock from '../components/myClock';
 import SideBar from './components/sidebar-banco';
 
-export default function Comandos_Sql() {
+function Comandos_Sql(props) {
 	
 	return (
 		<div>
 			<Head>
-				<title>MySQL - Banco de Dados</title>
+				<title>{props.title}</title>
 				<link rel="icon" href="/imagens/xlogo.png"/>
 			</Head>
 			
@@ -121,3 +121,12 @@ const SqlContainer = (props)=>{
 		</div>
     )
 }
+
+export async function getStaticProps() {
+	return{
+		props:{
+			title: 'MySQL - Banco de Dados'
+		}
+	}
+}
+export default Comandos_Sql

@@ -2,11 +2,11 @@ import Head from "next/head";
 import Navbar from "../banco-de-dados/components/navbar-banco";
 import SideBar from "./components/sidebar-banco";
 
-export default function NoSQL(){
+function NoSQL(props){
     return(
         <div>
             <Head>
-                <title>No SQL - Banco de Dados</title>
+                <title>{props.title}</title>
                 <link rel="icon" href="/imagens/xlogo.png"/>
             </Head>
             <div className="main">
@@ -34,3 +34,12 @@ export default function NoSQL(){
         </div>
     )
 }
+
+export async function getStaticProps() {
+	return{
+		props:{
+			title: 'No SQL - Banco de Dados'
+		}
+	}
+}
+export default NoSQL

@@ -2,9 +2,13 @@ import NavBar from './components/navbar-banco'
 import SideBar from './components/sidebar-banco'
 import Head from 'next/head'
 
-export default function ModelosDeBancosDeDados () {
+function ModelosDeBancosDeDados (props) {
     return(
         <div>
+            <Head>
+                <title>{props.title}</title>
+                <link rel="icon" href="/imagens/xlogo.png"/>
+            </Head>
             <div className="main">
                 <SideBar/>
                 <div className="main-content historia">
@@ -34,3 +38,11 @@ export default function ModelosDeBancosDeDados () {
         </div>
     )
 }
+export async function getStaticProps() {
+	return{
+		props:{
+			title: 'Modelos de Bancos de Dados - Banco De Dados'
+		}
+	}
+}
+export default ModelosDeBancosDeDados

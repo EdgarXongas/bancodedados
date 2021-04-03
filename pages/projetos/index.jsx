@@ -5,15 +5,9 @@ import Navbar from './components/navbar';
 import SideBar from './components/sidebar';
 import Clock from '../components/myClock';
 
-export async function getStaticProps(){
-    return{
-        props: {
-            title: 'Conversor - Projetos'
-        }
-    }
-}
 
-export default function Conversor(props) {
+
+function Conversor(props) {
     return(
         <div>
             <Head>
@@ -30,4 +24,13 @@ export default function Conversor(props) {
              <Navbar/>
         </div>
     )
-}   
+} 
+export async function getStaticProps(){
+    return{
+        props: {
+            title: 'Conversor - Projetos'
+        }
+    }
+}  
+
+export default Conversor

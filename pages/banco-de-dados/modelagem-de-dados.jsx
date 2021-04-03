@@ -3,11 +3,11 @@ import NavBar from './components/navbar-banco'
 import Head from 'next/head'
 import Clock from '../components/myClock'
 
-export default function ModelagemDeDados(){
+function ModelagemDeDados(props){
     return(
         <div>
             <Head>
-				<title>Modelagem de Dados - Banco de Dados</title>
+				<title>{props.title}</title>
 				<link rel="icon" href="/imagens/xlogo.png"/>
 			</Head>
 			<Clock/>
@@ -78,3 +78,11 @@ export default function ModelagemDeDados(){
         </div>
     )
 }
+export async function getStaticProps() {
+	return{
+		props:{
+			title: 'Modelagem de Dados - Banco De Dados'
+		}
+	}
+}
+export default ModelagemDeDados

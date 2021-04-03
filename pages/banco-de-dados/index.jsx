@@ -5,15 +5,9 @@ import Navbar from '../banco-de-dados/components/navbar-banco';
 import SideBar from '../banco-de-dados/components/sidebar-banco';
 import Clock from '../components/myClock';
 
-export async function getStaticProps(){
-    return{
-        props: {
-            title: 'Dados x Informação - Banco de Dados'
-        }
-    }
-}
 
-export default function DadosVsInformaçao(props) {
+
+function DadosVsInformaçao(props) {
 	
 	return (
 		<div>
@@ -94,3 +88,11 @@ export default function DadosVsInformaçao(props) {
 		</div>
 	)
 }
+export async function getStaticProps(){
+    return{
+        props: {
+            title: 'Dados x Informação - Banco de Dados'
+        }
+    }
+}
+export default DadosVsInformaçao

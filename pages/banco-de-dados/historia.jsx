@@ -4,12 +4,12 @@ import Clock from '../components/myClock';
 import SideBar from '../banco-de-dados/components/sidebar-banco';
 
 
-export default function Historia() {
+function Historia(props) {
 	
 	return (
 		<div>
 			<Head>
-				<title>História - Banco De Dados</title>
+				<title>{props.title}</title>
 				<link rel="icon" href="/imagens/xlogo.png"/>
 			</Head>
 			<Clock/>
@@ -71,3 +71,11 @@ export default function Historia() {
 		</div>
 	)
 }
+export async function getStaticProps() {
+	return{
+		props:{
+			title: 'História - Banco De Dados'
+		}
+	}
+}
+export default Historia
