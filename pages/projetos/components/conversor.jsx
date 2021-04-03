@@ -23,7 +23,6 @@ const Conversor = (props) =>{
         if(e.key=="Enter"){
             btn.current.click();
         }
-        console.log(typeof ipt);
     }
     function swapCurrency() {
         let a = moedaA;

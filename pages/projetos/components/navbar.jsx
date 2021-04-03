@@ -23,7 +23,6 @@ const Navbar = ()=> {
 				<Link href="/projetos">
 					<a>Projetos</a>
 				</Link>
-				<Link href="/projetos">Conversor</Link>
 			</div>
 			<Link href="/">
 				<input className="nav-btn" type="button" value="Sobre"/>

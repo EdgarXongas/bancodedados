@@ -5,19 +5,26 @@ import Navbar from './components/navbar';
 import SideBar from './components/sidebar';
 import Clock from '../components/myClock';
 
+export async function getStaticProps(){
+    return{
+        props: {
+            title: 'Conversor - Projetos'
+        }
+    }
+}
 
-export default function Conversor() {
+export default function Conversor(props) {
     return(
         <div>
             <Head>
-				<title>Conversor - Projetos</title>
+				<title>{props.title}</title>
 				<link rel="icon" href="/imagens/xlogo.png"/>
 			</Head>
             <Clock/>
             <div className="main">
                 <SideBar/>
                 <div className="main-content">
-                    {/* <Conversor_Component moedaA="USD" moedaB="BRL"/> */}
+                    <Conversor_Component moedaA="USD" moedaB="BRL"/>
                 </div>
             </div>
              <Navbar/>

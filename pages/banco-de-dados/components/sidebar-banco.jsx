@@ -21,6 +21,12 @@ const SideBar = ()=>{
                             <Link href="/banco-de-dados/modelagem-de-dados"><a><span>&bull;</span> Modelagem de Dados</a></Link>
                         </li>
                         <li>
+                            <Link href="/banco-de-dados/modelos-de-bancos-de-dados"><a><span>&bull;</span> Modelos de Bancos &nbsp;&nbsp;de Dados</a></Link>
+                        </li>
+                        <li>
+                            <Link href="/banco-de-dados/administrador-de-dados-e-dba"><a><span>&bull;</span> Administrador de &nbsp;&nbsp;Dados x DBA</a></Link>
+                        </li>
+                        <li>
                             <Link href="/banco-de-dados/my-sql"><a><span>&bull;</span> MySQL</a></Link>
                         </li>
                         <li>

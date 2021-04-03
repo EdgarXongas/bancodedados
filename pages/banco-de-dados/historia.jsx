@@ -16,8 +16,7 @@ export default function Historia() {
 			<div className="main">
 				<SideBar/>
 				<div className="main-content historia">
-                    <h1>Banco de Dados</h1>
-					<h2>História e Origem</h2>
+                    <h1>Banco de Dados: História e Origem</h1>
 					<p>A sociedade moderna sempre precisou de alguma maneira ou método para organizar informações.</p>
 					<p>Bancos, hospitais, delegacias, prefeituras, bibliotecas, empresas, e universidades sempre tiveram que lidar com armazenamento de dados e informação.</p>
 					<ul>

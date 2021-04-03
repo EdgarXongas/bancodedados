@@ -16,7 +16,6 @@ export default function ModelagemDeDados(){
                 <div className="main-content historia">
                     <div>
                         <h1>Modelagem de Dados</h1>
-                        <h2></h2>
                         <p>Como tudo na vida exige um planejamento. Os Banco de Dados não seriam diferentes, utilizamos a técnica 
                         de modelagem de dados para criar um banco de dados organizado, sustentável e otimizado. A modelagem de um 
                         banco de dados é um conjunto de aplicações teóricas e práticas, que se dividem em modelo conceitual, 

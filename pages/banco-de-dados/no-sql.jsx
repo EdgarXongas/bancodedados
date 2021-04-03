@@ -13,8 +13,7 @@ export default function NoSQL(){
                 <SideBar/>
                 <div className="main-content historia">
                     <h1>NoSQL</h1>
-                    <h2></h2>
-                    <p>Não Apenas SQL (Not only SQL), são bancos de dados não relacionados. Possuem maior performance e escalabilidade para grandes aplicações. Existem 4 (quatro) tipos:</p>
+                    <p>Not Only SQL(Não Apenas SQL), são bancos de dados não relacionados. Possuem maior performance e escalabilidade para grandes aplicações. Existem 4 (quatro) tipos:</p>
                     <ul>
                        <li>
                            <p>Documento - Dados são armazenados como documentos. Normalmento usam o padrão JSON (Javascript Object Notation). Ex: <a href="https://www.mongodb.com/" target="blank">MongoDB</a>.</p>

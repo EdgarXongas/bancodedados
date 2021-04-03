@@ -342,10 +342,13 @@ nav {
   color: rgba(0, 0, 0, 0.75);
   font-family: sans-serif;
   letter-spacing: 0.01em;
-  h1 { color: var(--blue);}
+  h1 { 
+    color: var(--blue);
+    margin-bottom: 25px;
+  }
   h2 {
-    margin-top: 35px;
     margin-bottom: 15px;
+    margin-top: 35px;
   }
   h3 {
     margin: 20px 0 10px;
@@ -373,7 +376,7 @@ nav {
     margin: 0 auto;
     letter-spacing: 0.01em;
     h1{
-      margin-bottom: 20px;
+      margin-bottom: 25px;
      // color: rgba(0, 0, 0, 0.75);
      color: var(--blue);
     }
@@ -382,10 +385,12 @@ nav {
     }
     h2{
       color: rgba(0, 0, 0, 0.75);
+      margin-bottom: 15px;
+      margin-top: 50px;
     }
   }
   .comandos {
-    margin: 50px auto;
+    margin: 30px auto;
     p {
       margin-bottom: 10px;
       color: rgba(0, 0, 0, 0.7);

@@ -24,6 +24,10 @@ const Navbar = ()=> {
 				<Link href="/banco-de-dados/historia"><a className="mobile-sidebar">História Bancos Dados</a></Link>
 					
 				<Link href="/banco-de-dados/modelagem-de-dados"><a className="mobile-sidebar">Modelagem de Dados</a></Link>
+
+				<Link href="/banco-de-dados/modelos-de-bancos-de-dados"><a className="mobile-sidebar"> Modelos Bancos de Dados</a></Link>
+
+				<Link href="/banco-de-dados/administrador-de-dados-e-dba"><a className="mobile-sidebar">Administrador Dados x DBA</a></Link>
 					
 				<Link href="/banco-de-dados/my-sql"><a className="mobile-sidebar">MySQL</a></Link>
 					
