@@ -4,11 +4,11 @@ import React from 'react'
 import Clock from './components/myClock'
 import Navbar from './components/navbar'
 
-export default function Home(){
+function Home(props){
     return(
         <div>
             <Head>
-                <title>Home - Edgar Jonas</title>
+                <title>{props.title}</title>
                 <link rel="icon" href="/imagens/xlogo.png"/>
             </Head>
             <Clock/>
@@ -55,3 +55,11 @@ export default function Home(){
         </div>
     )
 }
+export async function getStaticProps() {
+    return{
+        props:{
+            title: "Home - Edgar Jonas"
+        }
+    }
+}
+export default Home
