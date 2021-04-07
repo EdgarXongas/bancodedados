@@ -12,7 +12,10 @@ const SideBar = ()=>{
 				<li>
                     <ul>
                          <li>
-                            <Link href="/projetos"><a>Conversor Moedas</a></Link>
+                            <Link href="/projetos"><a>Lista de Tarefas</a></Link>
+                        </li>
+                         <li>
+                            <Link href="/projetos/conversor-moeda"><a>Conversor Moedas</a></Link>
                         </li>
                     </ul>
                 </li>

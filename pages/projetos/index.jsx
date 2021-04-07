@@ -1,36 +1,30 @@
-import React from 'react';
-import Head from 'next/head';
-import Conversor_Component from './components/conversor';
-import Navbar from './components/navbar';
-import SideBar from './components/sidebar';
-import Clock from '../components/myClock';
+import Sidebar from './components/sidebar'
+import NavBar from './components/navbar'
+import ToDo from './components/to-do-list'
+import Head from 'next/head'
 
-
-
-function Conversor(props) {
+function ListaDeTarefas(props) {
     return(
         <div>
             <Head>
-				<title>{props.title}</title>
-				<link rel="icon" href="/imagens/xlogo.png"/>
-			</Head>
-            <Clock/>
+                <title>{props.title}</title>
+                <link rel="icon" href="/imagens/xlogo.png"/>
+            </Head>
             <div className="main">
-                <SideBar/>
+                <Sidebar/>
                 <div className="main-content">
-                    <Conversor_Component moedaA="USD" moedaB="BRL"/>
+                    <ToDo/>
                 </div>
             </div>
-             <Navbar/>
+            <NavBar/>
         </div>
     )
-} 
+}
 export async function getStaticProps(){
     return{
         props: {
-            title: 'Conversor - Projetos'
+            title: 'Projetos - Lista de Tarefas'
         }
     }
-}  
-
-export default Conversor
+} 
+export default ListaDeTarefas

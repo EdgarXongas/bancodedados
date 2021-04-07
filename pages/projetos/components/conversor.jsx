@@ -10,13 +10,13 @@ const Conversor = (props) =>{
 
     async function getCurrency() {
         
-        let url = `https://api.exchangeratesapi.io/latest?base=${moedaA}`;
+       /*  let url = `https://api.exchangeratesapi.io/latest?base=${moedaA}`;
         
         let promise = await fetch(url);
         let obj = await promise.json();
         let result = obj.rates[moedaB] * ipt;
-        setResultado( Number(result)? (result.toFixed(2)).toString() : '');
-       
+        setResultado( Number(result)? (result.toFixed(2)).toString() : ''); */
+       confirm('Desculpa, estamos com problemas tecnicos em nosso conversor de moedas. =(')
     }
     function handleChange(e) {
         setIpt(parseFloat(e.target.value))
