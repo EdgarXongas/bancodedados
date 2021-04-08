@@ -60,10 +60,10 @@ const ToDoList = ()=>{
                 <input onClick={addItem} type="button" value="Add" ref={btn}/>
             </div>
             <ul>
-                {list.map(li=>{
+                {list.map(note=>{
                     return(
-                        <li key={li.id} className={li.concluido?'concluido':''} >
-                            <p onClick={()=>{handleClassChange(li.id)}}>{li.text}</p><span onClick={()=>{handleRemove(li.id)}}>&#120;</span>
+                        <li key={note.id} className={note.concluido?'concluido':''} >
+                            <p onClick={()=>{handleClassChange(note.id)}}>{note.text}</p><span onClick={()=>{handleRemove(note.id)}}>&#120;</span>
                         </li>
                     )
                 })}
