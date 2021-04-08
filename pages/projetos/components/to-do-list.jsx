@@ -36,20 +36,18 @@ const ToDoList = ()=>{
     }
 
     function handleRemove(id){
-        const filteredList = list.filter(li=>{
-            return li.id != id
+        const filteredList = list.filter(note=>{
+            return note.id != id
         })
         setlist(filteredList)
     }
 
     function handleClassChange(id){
-        const changedClassList = list.map(li=>{
-            if(li.id==id){
-                li.concluido = li.concluido? false: true
-                return li
-            }else{
-                return li
+        const changedClassList = list.map(nota=>{
+            if(nota.id==id){
+                nota.concluido = nota.concluido? false: true 
             }
+            return nota
         })
         setlist(changedClassList)
     }

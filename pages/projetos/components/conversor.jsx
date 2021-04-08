@@ -16,7 +16,7 @@ const Conversor = (props) =>{
         let obj = await promise.json();
         let result = obj.rates[moedaB] * ipt;
         setResultado( Number(result)? (result.toFixed(2)).toString() : ''); */
-       confirm('Desculpa, estamos com problemas tecnicos em nosso conversor de moedas. =(')
+       alert('Desculpa, estamos com problemas técnicos em nosso conversor de moedas. =(')
     }
     function handleChange(e) {
         setIpt(parseFloat(e.target.value))

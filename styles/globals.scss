@@ -2,7 +2,7 @@
 
 :root {
   --blue: #0000ffb3;
-  --orange: rgba(254, 103, 3, 0.7);
+  --orange: #fe6703b3;
 }
 * {
   padding: 0;
@@ -18,6 +18,7 @@ body {
   font-size: 50px;
   margin-bottom: 5px;
 }
+
           /* Barra de navegação */
 nav {
   display: flex;
@@ -94,10 +95,10 @@ nav {
 }
 .main-content { width: 60%; }
 
-              /* SideBar */
+         /* SideBar */
 .side-bar {
   list-style-type: none;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  border: 1px solid #0000001a;
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
   padding: 10px;
   border-radius: 5px;
@@ -128,8 +129,9 @@ nav {
       color: var(--blue);
     }
   }
-} 
-            /* Sobre */
+}
+
+          /* Sobre */
 .sobre {
   .meunome {
     margin-left: 7px;
@@ -185,8 +187,8 @@ nav {
     }
   }
 }
-         /* Dados x Informação */
 
+         /* Dados x Informação */
 .dadosxinformação {
   .le {
     color: #fe6603;
@@ -421,7 +423,7 @@ nav {
   }
 }
 
-/* Lista de Tarefas */
+        /* Lista de Tarefas */
 .to-do {
   display: flex;
   justify-content: center;
@@ -437,7 +439,7 @@ nav {
   div {
     width: 100%;
     height: 50px;
-    border: 1px solid green;
+    border: 1px solid rgba(0, 0, 0, 0.5);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -460,12 +462,12 @@ nav {
     letter-spacing: 0.1em;
     color: #f9f9f9;
     background-color: #16da16;
-    border: none;
     cursor: pointer;
     outline: none;
-    transition: all .1s;
-    &:active{
-      background-color: #71e471;
+    border: none;
+    transition: all .3s;
+    &:hover{
+      background-color: #34be34;
     }
   }
   ul{
@@ -486,7 +488,12 @@ nav {
   .concluido {
     background-color: #eee;
     p{
+      padding-left: 1%;
       text-decoration: line-through;
+    }
+    span{
+      background: none;
+      background-color: #5b7088c7;
     }
   }
   ul li {
@@ -497,9 +504,9 @@ nav {
     justify-content: space-between;
     align-items: center;
     border-radius: 5px;
-    /* overflow: hidden; */
     margin: 2px 0;
     cursor: pointer;
+    transition: all .3s;
     p {
       width: 85%;
       height: 50px;
@@ -509,19 +516,25 @@ nav {
     }
     span{
       font-size: 1.5em;
+      font-weight: lighter;
       min-width: 15%;
       height: 50px;
       color: white;
-      background-color: red;
       display: flex;
       justify-content: center;
       align-items: center;
       border-bottom-right-radius: 5px;
       border-top-right-radius: 5px;
+      user-select: none;
+      background-color: #4b9efdc7;
+      transition: all .3s;
+      &:hover{
+        background-color: rgb(255, 34, 34);
+      }
     }
   }
 }
-/* Mobile Configuration */
+        /* Mobile Configuration */
 .mobile-sidebar {
   display: none;
 }
@@ -588,5 +601,19 @@ nav {
   }
   .to-do{
     width: 100%;
+    input[type="text"]{
+      width: 80%;
+    }
+    input[type="button"]{
+      width: 20%;
+    }
+    ul li{
+      p {
+        width: 80%;
+      }
+      span{
+        min-width: 20%;
+      }
+    }
   }
 }
