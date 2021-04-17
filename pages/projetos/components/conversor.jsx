@@ -1,7 +1,6 @@
 import React, {useState,useRef,useEffect} from 'react';
 
 const Conversor = (props) =>{
-    console.log(props.rates.jsn)
     const btn = useRef('');
     const [resultado,setResultado] = useState('');
     const [ipt,setIpt] = useState(0);
