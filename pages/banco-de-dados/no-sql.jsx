@@ -8,6 +8,9 @@ function NoSQL(props){
             <Head>
                 <title>{props.title}</title>
                 <link rel="icon" href="/imagens/xlogo.png"/>
+                <meta name="description" content="Banco de dados - NoSQL"/>
+                <meta name="keywords" content="banco de dados, banco de dados não relacional, NoSQL, not only SQL"/>
+                <meta name="author" content="Edgar Jonas" />
             </Head>
             <div className="main">
                 <SideBar/>

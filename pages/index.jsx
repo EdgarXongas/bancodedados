@@ -1,7 +1,6 @@
 
 import Head from 'next/head'
 import React from 'react'
-import Clock from './components/myClock'
 import Navbar from './components/navbar'
 
 function Home(props){
@@ -10,8 +9,10 @@ function Home(props){
             <Head>
                 <title>{props.title}</title>
                 <link rel="icon" href="/imagens/xlogo.png"/>
+                <meta name="description" content="Currículo Edgar Jonas"/>
+                <meta name="keywords" content="Edgar Jonas, Desenvolvedor Web, Desenvolvedor Front-End"/>
+                <meta name="author" content="Edgar Jonas" />
             </Head>
-            <Clock/>
             <div className="main">
                 <div className="main-content sobre">
                     <p className="meunome">Quem é &nbsp;<span>Edgar Jonas?</span></p>

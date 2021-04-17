@@ -1,7 +1,6 @@
 import SideBar from './components/sidebar-banco'
 import NavBar from './components/navbar-banco'
 import Head from 'next/head'
-import Clock from '../components/myClock'
 
 function ModelagemDeDados(props){
     return(
@@ -9,8 +8,10 @@ function ModelagemDeDados(props){
             <Head>
 				<title>{props.title}</title>
 				<link rel="icon" href="/imagens/xlogo.png"/>
+                <meta name="description" content="Banco de dados - Modelagem de Dados"/>
+                <meta name="keywords" content="Banco de dados, modelagem de dados, modelagem lógica, modelagem conceitual, modelagem física"/>
+                <meta name="author" content="Edgar Jonas" />
 			</Head>
-			<Clock/>
 			<div className="main">
 				<SideBar/>
                 <div className="main-content historia">

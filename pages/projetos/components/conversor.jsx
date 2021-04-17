@@ -1,22 +1,31 @@
-import React, {useState,useRef} from 'react';
+import React, {useState,useRef,useEffect} from 'react';
 
 const Conversor = (props) =>{
-
-   const btn = useRef('');
-   const [resultado,setResultado] = useState('');
-   const [ipt,setIpt] = useState(0);
-   const [moedaA,setMoedaA] = useState(props.moedaA);
-   const [moedaB,setMoedaB] = useState(props.moedaB);
-
+    console.log(props.rates.jsn)
+    const btn = useRef('');
+    const [resultado,setResultado] = useState('');
+    const [ipt,setIpt] = useState(0);
+    const [moedaA,setMoedaA] = useState(props.moedaA);
+    const [moedaB,setMoedaB] = useState(props.moedaB);
+    const [rates,setRates] = useState('')
+    const [something,setSomething] = useState(false)
+    let obj = props.rates.jsn
+    
+    useEffect(()=>{
+        let arr = []
+        for(let key in obj){
+            arr.push(obj[key])
+        }
+        setRates(arr)
+        setSomething(true)
+    },[])
+    
     async function getCurrency() {
         
-       /*  let url = `https://api.exchangeratesapi.io/latest?base=${moedaA}`;
-        
-        let promise = await fetch(url);
-        let obj = await promise.json();
-        let result = obj.rates[moedaB] * ipt;
-        setResultado( Number(result)? (result.toFixed(2)).toString() : ''); */
-       alert('Desculpa, estamos com problemas técnicos em nosso conversor de moedas. =(')
+        let rates = props.rates.jsn
+        let result = ipt*(parseFloat(rates[moedaA].bid))
+        setResultado( Number(result)? (result.toFixed(2).toString()):'')   
+
     }
     function handleChange(e) {
         setIpt(parseFloat(e.target.value))
@@ -30,11 +39,6 @@ const Conversor = (props) =>{
         [a,b] = [b,a];
         setMoedaA(a);
         setMoedaB(b);
-
-        // Why this swap work???
-       /*  setMoedaA(moedaA===moedaA? moedaB : moedaA);
-        setMoedaB(moedaB===moedaB? moedaA : moedaB); */
-
         setTimeout(()=>{
            btn.current.click();
         },1)
@@ -58,26 +62,19 @@ const Conversor = (props) =>{
             <div className="ipt-container">
                 <div>
                     <select value={moedaA} onChange={getMoedaA}>
-                        <option title="Brasil" value="BRL">BRL</option>
-                        <option value="USD">USD</option>
-                        <option value="EUR">EUR</option>
-                        <option value="CAD">CAD</option>
-                        <option value="JPY">JPY</option>
-                        <option value="RUB">RUB</option>
-                        <option value="HKD">HKD</option>
+                        {something && rates.map((rate,k)=>{
+                            return(
+                                <option value={rate?.code} key={k} >{rate.code}</option>
+                            )
+                        })}
                     </select>
                     <input type="text" placeholder="..." onKeyUp={handleChange}/>
                 </div>
-                <span onClick={swapCurrency}><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 0 24 24" width="30"><path d="M0 0h24v24H0z" fill="none"/><path d="M6.99 11L3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z"/></svg></span>
+               {/*  <span onClick={swapCurrency}><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 0 24 24" width="30"><path d="M0 0h24v24H0z" fill="none"/><path d="M6.99 11L3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z"/></svg></span> */}
+                <span>&nbsp;=&nbsp;</span>
                 <div>
-                    <select value={moedaB} onChange={getMoedaB}>
-                        <option value="BRL">BRL</option>
-                        <option value="USD">USD</option>
-                        <option value="EUR">EUR</option>
-                        <option value="CAD">CAD</option>
-                        <option value="JPY">JPY</option>
-                        <option value="RUB">RUB</option>
-                        <option value="HKD">HKD</option>
+                    <select>
+                        <option>BRL</option>
                     </select>
                     <input type="text" data-disable="true" disabled value={resultado}/>
                 </div>

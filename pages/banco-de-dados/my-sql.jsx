@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Navbar from "../banco-de-dados/components/navbar-banco";
-import Clock from '../components/myClock';
 import SideBar from './components/sidebar-banco';
 
 function Comandos_Sql(props) {
@@ -10,9 +9,10 @@ function Comandos_Sql(props) {
 			<Head>
 				<title>{props.title}</title>
 				<link rel="icon" href="/imagens/xlogo.png"/>
+				<meta name="description" content="Banco de dados - MySQL Modelo Relacional e comandos básicos."/>
+                <meta name="keywords" content="Banco de dados, MySQL, banco de dados relacional, comandos MySQL"/>
+                <meta name="author" content="Edgar Jonas" />
 			</Head>
-			
-			<Clock/>
 			<div className="main">
 				<SideBar/>
                 <div className="main-content comandos-sql">

@@ -8,6 +8,9 @@ function AdminDeDadosEDBA (props){
             <Head>
 				<title>{props.title}</title>
 				<link rel="icon" href="/imagens/xlogo.png"/>
+                <meta name="description" content="Administrador de Dados e DBA a diferença"/>
+                <meta name="keywords" content="Administrador de dados, DBA, database administrator"/>
+                <meta name="author" content="Edgar Jonas" />
 			</Head>
             <div className="main">
                     <SideBar/>

@@ -18,7 +18,6 @@ body {
   font-size: 50px;
   margin-bottom: 5px;
 }
-
           /* Barra de navegação */
 nav {
   display: flex;
@@ -45,7 +44,7 @@ nav {
       letter-spacing: 2px;
       transition: color 0.2s ease 0.1s;
       &:hover{
-      color: var(--blue);
+        opacity: 0.7;
       }
     }
     ul {
@@ -93,6 +92,7 @@ nav {
   display: flex;
   justify-content: space-evenly;
 }
+
 .main-content { width: 60%; }
 
          /* SideBar */
@@ -115,7 +115,7 @@ nav {
       font-weight: 500;
       transition: all .1s ease .1s;
       &:hover {
-       color: #4c4cffc4;
+       opacity: 0.7;
       }
     }
     p { 
@@ -282,7 +282,7 @@ nav {
     justify-content: center;
     align-items: center; 
     margin-top: 10px;
-    select {
+    select,span {
       border-radius: 5px;
       border: none;
       font-size: 20px;
@@ -537,6 +537,154 @@ nav {
         /* Mobile Configuration */
 .mobile-sidebar {
   display: none;
+}
+
+.despesas {
+  width: 80%;
+  margin: 0 auto;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: rgba(0, 0, 0, 0.7);
+  h1 {
+    margin-bottom: 30px;
+    font-size: 50px;
+    color: var(--blue);
+  }
+  .ipt-con {
+    width: 100%;
+    height: 171px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    padding-left: 1%;
+    padding: 7px;
+    overflow: hidden;
+    transition: all 0.4s;
+    .add-btn-con {
+      width: 100%;
+      display: flex;
+      justify-content: flex-start;
+      button {
+        width: 25px;
+        height: 25px;
+        margin-bottom: 2px;
+        font-size: 1em;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        margin-bottom: 2%;
+        background: #19f519;
+        color: white;
+        cursor: pointer;
+      }
+    }
+    div {
+      input {
+        width: 50%;
+        outline: none;
+        border-radius: 5px;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+        padding: 1.5%;
+        font-size: 1.1em;
+        color: rgba(0, 0, 0, 0.7);
+      }
+    }
+    div {
+      display: flex;
+      justify-content: flex-end;
+      .add-btn {
+        margin: 2% 0;
+        background-color: #16da16;
+        color: white;
+        width: 20%;
+        height: 35px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all .3s;
+        &:hover{
+          opacity: 0.7;
+        }
+      }
+    }
+  }
+  ul {
+    width: 100%;
+    list-style-type: none;
+    li {
+      width: 100%;
+      height: 50px;
+      border: 1px solid rgba(0, 0, 0, 0.5);      
+      border-radius: 5px;
+      margin: 5px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: all .5s;
+      .txt-con {
+        width: 80%;
+        padding-left: 4%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        p {
+          width: 40%;
+        }
+      }
+      .btn-con {
+        min-width: 20%;
+        height: 50px;
+        input{
+          transition: all .5s;
+          width: 50%;
+          height: 50px;
+          color: white;
+          border: none;
+          cursor: pointer;
+        }
+        .quitar {
+          background-color: #4b9efdc7;
+        }
+        .excluir {
+          background-color: var(--orange);
+          border-top-right-radius: 5px;
+          border-bottom-right-radius: 5px;
+        }
+      }
+    }
+  }
+  .concluido:before {
+    content: " ";
+    display: inline-block;
+    width: 15px;
+    height: 6px;
+    transform: rotate(-45deg) translate(0,-40%);
+    border-bottom: 3px solid rgba(0, 128, 0, 0.849);
+    border-left: 3px solid rgba(0, 128, 0, 0.849);
+    margin: 0 0 0 20px;
+  } 
+  .concluido {
+    background-color: #eee;
+    p{
+      padding-left: 1%;
+      text-decoration: line-through;
+    }
+    .btn-con{
+      .quitar{
+        background: none;
+        background-color: #aaa;
+      }
+      .excluir {
+        background-color: #5b7088c7;
+      }
+    }
+  }
+  >p {
+    margin-top: 20px;
+  }
+}
+.hide {
+  height: 40px !important;
 }
 
 

@@ -1,9 +1,8 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import React, { useState } from 'react';
-import Navbar from '../banco-de-dados/components/navbar-banco';
-import SideBar from '../banco-de-dados/components/sidebar-banco';
-import Clock from '../components/myClock';
+import Head from 'next/head'
+import Image from 'next/image'
+import React, { useState } from 'react'
+import Navbar from '../banco-de-dados/components/navbar-banco'
+import SideBar from '../banco-de-dados/components/sidebar-banco'
 
 
 
@@ -14,8 +13,10 @@ function DadosVsInformaçao(props) {
 			<Head>
 				<title>{props.title}</title>
 				<link rel="icon" href="/imagens/xlogo.png"/>
+                <meta name="description" content="Banco de dados - Diferença entre Dados e Informação"/>
+                <meta name="keywords" content="Dados e informação, diferença entre dados e informação, banco de dados"/>
+                <meta name="author" content="Edgar Jonas" />
 			</Head>
-			<Clock/>
 			<div className="main">
 				<SideBar/>
 				<div className="main-content dadosxinformação">
@@ -84,7 +85,6 @@ function DadosVsInformaçao(props) {
 				</div>
 				</div>
 			<Navbar/>
-			<Clock/>
 		</div>
 	)
 }

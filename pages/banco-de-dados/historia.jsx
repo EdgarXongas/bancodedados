@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import Navbar from "../banco-de-dados/components/navbar-banco";
-import Clock from '../components/myClock';
 import SideBar from '../banco-de-dados/components/sidebar-banco';
 
 
@@ -11,8 +10,10 @@ function Historia(props) {
 			<Head>
 				<title>{props.title}</title>
 				<link rel="icon" href="/imagens/xlogo.png"/>
+				<meta name="description" content="História Banco de dados - Um pouco sobre a história dos bancos de dados."/>
+                <meta name="keywords" content="História banco de dados"/>
+                <meta name="author" content="Edgar Jonas" />
 			</Head>
-			<Clock/>
 			<div className="main">
 				<SideBar/>
 				<div className="main-content historia">
@@ -67,7 +68,6 @@ function Historia(props) {
                 </div>
 			</div>
 			<Navbar/>
-			<Clock/>
 		</div>
 	)
 }

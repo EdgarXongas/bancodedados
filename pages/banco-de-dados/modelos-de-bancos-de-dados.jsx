@@ -8,6 +8,9 @@ function ModelosDeBancosDeDados (props) {
             <Head>
                 <title>{props.title}</title>
                 <link rel="icon" href="/imagens/xlogo.png"/>
+                <meta name="description" content="Banco de dados - Modelos de Banco de Dados"/>
+                <meta name="keywords" content="Banco de dados, modelos de banco de dados, modelo hierárquico, modelo em rede, modelo relacional, modelo orientado a objetos, modelo relacional estendido"/>
+                <meta name="author" content="Edgar Jonas" />
             </Head>
             <div className="main">
                 <SideBar/>
