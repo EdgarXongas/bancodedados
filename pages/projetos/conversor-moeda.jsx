@@ -1,10 +1,13 @@
-/* import React from 'react';
+import React from 'react';
 import Head from 'next/head';
 import Conversor_Component from './components/conversor';
 import Navbar from './components/navbar';
 import SideBar from './components/sidebar';
 
-function Conversor({title,rates}) {
+
+
+
+function Conversor({title,rate}) {
     return(
         <div>
             <Head>
@@ -14,7 +17,7 @@ function Conversor({title,rates}) {
             <div className="main">
                 <SideBar/>
                 <div className="main-content">
-                    <Conversor_Component rates={rates} moedaA="USD" moedaB="BRL"/>
+                    <Conversor_Component rates={rate} moedaA="USD" moedaB="BRL"/>
                 </div>
             </div>
              <Navbar/>
@@ -22,16 +25,16 @@ function Conversor({title,rates}) {
     )
 } 
 export async function getStaticProps(){
-    
-    let promise = await fetch('http://localhost:3000/api/rates')
+    let promise = await fetch('https://economia.awesomeapi.com.br/json/all')
     let jsn = await promise.json()
+    
     return{
         props: {
             title: 'Projetos - Conversor',
-            rates: {...jsn} 
+            rate: {...jsn} 
         },
         revalidate:  86400
     }
 }  
 
-export default Conversor */
+export default Conversor
