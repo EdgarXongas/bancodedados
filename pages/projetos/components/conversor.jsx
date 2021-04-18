@@ -1,4 +1,4 @@
-import React, {useState,useRef,useEffect} from 'react';
+/* import React, {useState,useRef,useEffect} from 'react';
 
 const Conversor = (props) =>{
     const btn = useRef('');
@@ -80,3 +80,4 @@ const Conversor = (props) =>{
     )
 }
 export default Conversor
+ */

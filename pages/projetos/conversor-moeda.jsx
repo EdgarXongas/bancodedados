@@ -1,11 +1,8 @@
-import React from 'react';
+/* import React from 'react';
 import Head from 'next/head';
 import Conversor_Component from './components/conversor';
 import Navbar from './components/navbar';
 import SideBar from './components/sidebar';
-
-
-
 
 function Conversor({title,rates}) {
     return(
@@ -37,4 +34,4 @@ export async function getStaticProps(){
     }
 }  
 
-export default Conversor
+export default Conversor */
