@@ -25,9 +25,9 @@ function Conversor({title,rate}) {
     )
 } 
 export async function getStaticProps(){
-    let promise = await fetch('https://economia.awesomeapi.com.br/json/all')
+    let promise = await fetch(/* 'http://localhost:3000/api/rates' */'https://economia.awesomeapi.com.br/json/all')
     let jsn = await promise.json()
-    
+
     return{
         props: {
             title: 'Projetos - Conversor',

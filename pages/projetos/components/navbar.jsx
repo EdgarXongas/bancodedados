@@ -23,6 +23,7 @@ const Navbar = ()=> {
 				<Link href="/projetos">
 					<a>Projetos</a>
 				</Link>
+				<Link href="/projetos/conversor-moeda"><a className="mobile-sidebar">Conversor de Moeda</a></Link>
 			</div>
 			<Link href="/">
 				<input className="nav-btn" type="button" value="Sobre"/>
