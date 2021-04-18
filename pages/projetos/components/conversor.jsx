@@ -6,25 +6,23 @@ const Conversor = (props) =>{
     const [ipt,setIpt] = useState(0);
     const [moedaA,setMoedaA] = useState(props.moedaA);
     const [moedaB,setMoedaB] = useState(props.moedaB);
-    const [rates,setRates] = useState('')
+    const [codes,setCodes] = useState('')
     const [something,setSomething] = useState(false)
-    let obj = props.rates.jsn
-    
+
     useEffect(()=>{
+        let obj = props.rates
         let arr = []
         for(let key in obj){
             arr.push(obj[key])
         }
-        setRates(arr)
+        setCodes(arr)
         setSomething(true)
     },[])
     
     async function getCurrency() {
-        
-        let rates = props.rates.jsn
-        let result = ipt*(parseFloat(rates[moedaA].bid))
+        let rates = props.rates
+        let result = (parseFloat(rates[moedaA].bid))*ipt
         setResultado( Number(result)? (result.toFixed(2).toString()):'')   
-
     }
     function handleChange(e) {
         setIpt(parseFloat(e.target.value))
@@ -61,16 +59,15 @@ const Conversor = (props) =>{
             <div className="ipt-container">
                 <div>
                     <select value={moedaA} onChange={getMoedaA}>
-                        {something && rates.map((rate,k)=>{
+                        {something && codes.map((rate,k)=>{
                             return(
-                                <option value={rate?.code} key={k} >{rate.code}</option>
+                                <option value={rate?.code} key={k} >{rate?.code}</option>
                             )
                         })}
                     </select>
-                    <input type="text" placeholder="..." onKeyUp={handleChange}/>
+                    <input type="text" placeholder="$$$" onKeyUp={handleChange}/>
                 </div>
-               {/*  <span onClick={swapCurrency}><svg xmlns="http://www.w3.org/2000/svg" height="30" viewBox="0 0 24 24" width="30"><path d="M0 0h24v24H0z" fill="none"/><path d="M6.99 11L3 15l3.99 4v-3H14v-2H6.99v-3zM21 9l-3.99-4v3H10v2h7.01v3L21 9z"/></svg></span> */}
-                <span>&nbsp;=&nbsp;</span>
+                <span>=</span>
                 <div>
                     <select>
                         <option>BRL</option>

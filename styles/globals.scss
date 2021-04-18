@@ -266,7 +266,7 @@ nav {
   justify-content: center;
   align-items: center;
   width: 60%;
-  min-height: 60%;
+  min-height: 20rem;
   margin: auto;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 5px;
@@ -274,7 +274,7 @@ nav {
   user-select: none;
   h2 {
     font-size: 40px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: rgba(0, 0, 0, 0.7);
   }
   .ipt-container {
@@ -282,19 +282,21 @@ nav {
     justify-content: center;
     align-items: center; 
     margin-top: 10px;
-    select,span {
+    color: rgba(0, 0, 0, 0.7);
+    select {
       border-radius: 5px;
       border: none;
       font-size: 20px;
-      color: rgba(0, 0, 0, 0.7);
+      color: inherit;
       outline: none;
       display: block;
       margin-bottom: 5px;
     }
     span {
-    margin: 0 4px;
-    cursor: pointer;
-    transform: translateY(45%);
+      margin: 0 10.5px;
+      font-size: 2rem;
+      transform: translateY(40%);
+      color: inherit;
     }
   }
   input[type="text"] {
@@ -308,14 +310,14 @@ nav {
     outline: none;
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: all .3s;
-    color: rgba(0, 0, 0, 0.75);
+    color: inherit;
     &:focus {
       border: 1px solid #0000ffb3;
     }
   }
   input[data-disable="true"] {
     cursor: not-allowed;
-   
+    color: inherit;
   }
   input[type="button"] {
     width: 240px;
@@ -334,6 +336,9 @@ nav {
       cursor: pointer;
       background-color: #f9f9f9;
       color: var(--blue);
+    }
+    &:active{
+      transform: translateY(-5%);
     }
   }
 }
