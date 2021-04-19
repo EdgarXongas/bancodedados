@@ -63,7 +63,7 @@ const ToDoList = ()=>{
                 {list.map(note=>{
                     return(
                         <li key={note.id} className={note.concluido?'concluido':''} >
-                            <p onClick={()=>{handleClassChange(note.id)}}>{note.text}</p><span onClick={()=>{handleRemove(note.id)}}>&#120;</span>
+                            <p onClick={()=>{handleClassChange(note.id)}}>{note?.text}</p><span onClick={()=>{handleRemove(note?.id)}}>&#120;</span>
                         </li>
                     )
                 })}

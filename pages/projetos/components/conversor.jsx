@@ -15,6 +15,7 @@ const Conversor = (props) =>{
         for(let key in obj){
             arr.push(obj[key])
         }
+        arr.shift()
         setCodes(arr)
         setSomething(true)
     },[])
@@ -61,11 +62,11 @@ const Conversor = (props) =>{
                     <select value={moedaA} onChange={getMoedaA}>
                         {something && codes.map((rate,k)=>{
                             return(
-                                <option value={rate?.code} key={k} >{rate?.code}</option>
+                                <option title={rate?.name} value={rate?.code} key={k} >{rate?.code}</option>
                             )
                         })}
                     </select>
-                    <input type="text" placeholder="$$$" onKeyUp={handleChange}/>
+                    <input type="text" placeholder="$" onKeyUp={handleChange}/>
                 </div>
                 <span>=</span>
                 <div>

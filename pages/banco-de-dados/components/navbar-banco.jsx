@@ -34,9 +34,18 @@ const Navbar = ()=> {
 				
 				<Link href="/banco-de-dados/no-sql"><a className="mobile-sidebar">NoSQL</a></Link>
 			
-				<Link href="/projetos">
-					<a>Projetos</a>
-				</Link>
+				<div className="drop-down">
+					<span>Projetos</span>
+					<img src="/imagens/arrow-down.webp" alt="arrow"/>
+					<ul className="drop-menu">
+						<li>
+							<Link href="/projetos/conversor-moeda"><a>Conversor de Moedas</a></Link>
+						</li>
+						<li>
+							<Link href="/projetos/"><a>Lista de tarefas</a></Link>
+						</li>
+					</ul>
+				</div>
 			</div>
 			<Link href="/">
 				<input className="nav-btn" type="button" value="Sobre"/>

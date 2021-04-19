@@ -49,7 +49,6 @@ nav {
     }
     ul {
       list-style-type: none;
-      
     }
     .mobile {
       display: none;
@@ -80,6 +79,44 @@ nav {
     background-color: rgba(0, 0, 0, 0.747);
     margin: 4px 0;
     border-radius: 5px;
+  }
+  .drop-down {
+    display: inline-block;
+    padding: 0.2rem 0.2rem;
+    border-radius: 5px;
+    font-size: 20px;
+    transition: all .3s;
+    cursor: pointer;
+    span {
+      padding: .3rem;
+    }
+    &:hover .drop-menu{
+      display: block;
+    }
+    &:hover{
+      box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.1);    
+    }
+    img {
+      width: 1rem;
+      height: auto;
+      transform: translate(-10%,10%);
+    }
+  }
+  .drop-menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0 5px 5px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: .5rem 0;
+    transform: translate(-1%,6%);
+    li {
+      margin-bottom: .6rem;
+    }
+    a {
+      font-size: 17px;
+      padding: 0;
+    }
   }
 }
 .main {
@@ -637,9 +674,12 @@ nav {
         }
       }
       .btn-con {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         min-width: 20%;
         height: 50px;
-        input{
+        input {
           transition: all .5s;
           width: 50%;
           height: 50px;
@@ -648,12 +688,19 @@ nav {
           cursor: pointer;
         }
         .quitar {
-          background-color: #4b9efdc7;
+          width: 2.5rem;
+          height: auto;
+          opacity: 0.4;
+          cursor: pointer;
         }
         .excluir {
           background-color: var(--orange);
           border-top-right-radius: 5px;
           border-bottom-right-radius: 5px;
+          min-width: 2rem;
+          &:hover{
+            background-color: rgb(255, 38, 38);
+          }
         }
       }
     }
@@ -675,10 +722,6 @@ nav {
       text-decoration: line-through;
     }
     .btn-con{
-      .quitar{
-        background: none;
-        background-color: #aaa;
-      }
       .excluir {
         background-color: #5b7088c7;
       }
@@ -693,7 +736,7 @@ nav {
 }
 
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 850px) {  
   body {
     overflow-x: hidden;
   }
@@ -724,6 +767,12 @@ nav {
     .burger { display: block; }
     .show-nav {
       transform: translateX(0);
+    }
+    .drop-menu {
+      transform: translate(-30%,4.5%);
+      li {
+        margin: 1rem 0;
+      }
     }
   }
   .nav-btn, .side-bar { 
@@ -767,6 +816,19 @@ nav {
       span{
         min-width: 20%;
       }
+    }
+  }
+  .despesas {
+    .btn-con {
+      width: 50%;
+    }
+  }
+  .main-content {
+    width: 100vw;
+     > div {
+      width: 90vw;
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 }

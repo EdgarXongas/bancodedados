@@ -105,8 +105,9 @@ const Despesas = ()=>{
                                 <p>R$ {conta?.valor}</p>
                             </div>
                             <div className="btn-con">
-                                <input className="quitar" onClick={()=>{handlePaid(conta?.id)}} type="button" value="Quitar"/>
-                                <input className="excluir" onClick={()=>{handleRemove(conta?.id)}} type="button" value="x"/>
+                                {/* <input className="quitar" onClick={()=>{handlePaid(conta?.id)}} type="button" value="Quitar"/> */}
+                                <img src="/imagens/checked.png" className="quitar" onClick={()=>{handlePaid(conta?.id)}}/>
+                                <input className="excluir" onClick={()=>{handleRemove(conta?.id)}} type="button" value="X"/>
                             </div>
                             
                         </li>

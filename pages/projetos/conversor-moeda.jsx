@@ -4,9 +4,6 @@ import Conversor_Component from './components/conversor';
 import Navbar from './components/navbar';
 import SideBar from './components/sidebar';
 
-
-
-
 function Conversor({title,rate}) {
     return(
         <div>
@@ -25,7 +22,9 @@ function Conversor({title,rate}) {
     )
 } 
 export async function getStaticProps(){
-    let promise = await fetch(/* 'http://localhost:3000/api/rates' */'https://economia.awesomeapi.com.br/json/all')
+    let url = 'https://economia.awesomeapi.com.br/json/all'
+    let localApi = 'http://localhost:3000/api/rates'
+    let promise = await fetch(url)
     let jsn = await promise.json()
 
     return{
