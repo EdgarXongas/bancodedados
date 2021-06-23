@@ -28,12 +28,14 @@ function Home(props){
                          <div>
                             <h3>Estou Aprendendo</h3>
                             <ul>
-                                <li><span>&bull;</span>Javascript, Java e Python</li>
-                                <li><span>&bull;</span>React.js e React Native</li>
+                                <li><span>&bull;</span>Javascript</li>
+                                <li><span>&bull;</span>SASS</li>
+                                <li><span>&bull;</span>Bootstrap</li>
+                                <li><span>&bull;</span>React.js</li>
                                 <li><span>&bull;</span><a href="https://nextjs.org/" target="blank">Next.js</a></li>
-                                <li><span>&bull;</span>APIs (Next.js e Express.js)</li>
+                                <li><span>&bull;</span>Consumo de APIs</li>
                                 <li><span>&bull;</span>MySQL (mariaDB)</li>
-                                <li><span>&bull;</span>Aplicações para dispositivos móveis (Android).</li>
+                                
                             </ul>
                         </div>
                     </div>
@@ -41,8 +43,8 @@ function Home(props){
                         <div>
                             <h3>Formação e Experiências</h3>
                             <ul>
-                                <li><span>&bull;</span>Cursando Curso Superior de Análise e Desenvolvimento de Sistemas (<a href="https://faculdadecdl.edu.br/" target="blank">Faculdade CDL</a>).</li>
-                                <li><span>&bull;</span>Participação da <a href="https://nextlevelweek.com/pre-nlw" target="blank">NextLevelWeek</a> da <a href="https://rocketseat.com.br/" target="blank">Rocketseat</a>.</li>
+                                <li><span>&bull;</span>Cursando Curso Superior de Análise e Desenvolvimento de Sistemas.</li>
+                                <li><span>&bull;</span>Participação de webinar NLW4 e NLW5 da <a href="https://rocketseat.com.br/" target="blank">Rocketseat</a>.</li>
                             </ul>
                         </div> 
                         <div>

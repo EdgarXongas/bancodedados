@@ -189,6 +189,8 @@ nav {
     justify-content: space-around;
     align-items: center;
     letter-spacing: 0.01em;
+    font: 500 1.1rem Helvetica, sans-serif;
+
     div {
       border: 1px solid var(--blue);
       box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
@@ -199,25 +201,30 @@ nav {
       margin: 0.4em;
       color:rgba(0, 0, 0, 0.7);
       transition: all .5s;
+
       &:hover{
         transform: translate(1%,-1%);
       }
+
       a{
         text-decoration: none;
         &:hover { text-decoration: underline; }
       }
+
       h3{
         color: var(--blue);
         margin-bottom: 10px;
+        
       }
+
       ul li {
-       margin: 5px 0;
+       margin: .5rem 0;
        list-style-type: none;
+
        span {
         color: #0000ff;
         font-weight: bold;
         display: inline-block;
-        font-size: 1em;
         margin-right: 10px;
        }
       }
@@ -234,6 +241,7 @@ nav {
     font-size: 1em;
     margin-right: 10px;
   }
+
   .lb {
     color: #0000ff;
     font-weight: bold;
@@ -241,6 +249,7 @@ nav {
     font-size: 1em;
     margin-right: 10px;
   }
+
   ul li {
     margin-left: 30px;
     list-style-type: none;
